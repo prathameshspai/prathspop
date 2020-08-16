@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@mipmap/cap"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/titleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/titleId"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/imageid"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/ratings"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/imageid"
+            app:layout_constraintTop_toBottomOf="@+id/titleId" />
+
+        <TextView
+            android:id="@+id/rated_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="9.0/10"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/imageid"
+            app:layout_constraintTop_toBottomOf="@+id/rated" />
+
+        <TextView
+            android:id="@+id/dateId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/release_date"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/imageid"
+            app:layout_constraintTop_toBottomOf="@+id/rated_tv" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="16/01/2001"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/imageid"
+            app:layout_constraintTop_toBottomOf="@+id/dateId" />
+
+        <TextView
+            android:id="@+id/overviewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/overview"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageid" />
+
+        <TextView
+            android:id="@+id/overview_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="This is an overview."
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overviewId" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
